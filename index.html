@@ -1,7 +1,7 @@
 <!DOCTYPE html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>HTML5 steel cheat</title>
+    <title>Un titre avec pleins de mots clés | Nom du site</title>
     <meta name="description" content="Y mettre une très bonne description favorise la montée dans une SERP">
     <link rel="stylesheet" href="styles.css" media="all">
     <link rel="alternate stylesheet" href="more-accessible.css" title="More accessible" media="all">
@@ -9,20 +9,21 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
   </head>
   <body>
-    <nav class="evitement" aria-hidden="true">
+    <nav class="avoiding highlighting" aria-hidden="true">
       <ul>
-        <li><a href="#menu" id="menu">Aller au menu</a></li>
-        <li><a href="#main">Aller au contenu</a></li>
-        <li><a href="#searchLabel">Aller à la recherche</a></li>
+        <li><a href="#skipMenu" id="skipHiddenMenu">Aller au menu</a></li>
+        <li><a href="#skipLanguage">Choisir la langue</a></li>
+        <li><a href="#skipMain">Aller au contenu</a></li>
+        <li><a href="#skipSearch">Aller à la recherche</a></li>
       </ul>
     </nav>
 
-    <header>
-      <a href="index.html" title="Accueil">
+    <header class="header highlighting">
+      <a href="index.html" title="Accueil" class="highlighting">
         <img src="logo.png" width="256" height="256" alt="">
       </a>
-      <nav>
-        <ul id="menu">
+      <nav class="highlighting">
+        <ul id="skipMenu">
           <li><a href="news.html">Actualités</a></li>
           <li><a href="tutorial.html">Tutoriels</a></li>
           <li><a href="forum.html">Forum</a></li>
@@ -32,33 +33,173 @@
           <li><a href="signin.html">S'inscrire</a></li>
           <li><a href="login.html">S'identifier</a></li>
         </ul>
-        <ul>
+        <ul id="skipLanguage">
           <li><a href="french.html" title="Français" class="active" hreflang="fr">Français</a></li>
           <li><a href="english.html" title="Anglais" rel="alternate" hreflang="en" lang="en">English</a></li>
           <li><a href="japanese.html" title="Japonais" rel="alternate" hreflang="ja" lang="ja">日本語</a></li>
         </ul>
       </nav>
-      <form role="search" action="/search" method="post">
-        <label for="search" id="searchLabel">Rechercher</label>
+      <form role="search" action="/search" method="post" class="highlighting">
+        <label for="search" id="skipSearch">Rechercher</label>
         <input id="search" name="q" placeholder="Rechercher" value="" type="search">
         <input value="Rechercher" name="submit" type="submit">
       </form>
     </header>
 
-    <main id="main">
-      <article>
-        <header>
-          <h1 lang="en"><abbr title="Hypertext Markup Language">HTML</abbr>5 steel cheat</h1>
+    <nav class="highlighting">
+      <span>Accueil</span>
+    </nav>
+
+    <!-- réseaux sociaux -->
+    <!-- json-ld -->
+    <!-- tab -->
+    <!-- ARIA -->
+
+    <main id="skipMain" class="highlighting">
+      <section class="highlighting">
+        <header class="highlighting">
+          <h1>Nouveautés</h1>
         </header>
-        <section>
-        </section>
-        <footer>
-        </footer>
-      </article>
+        <div class="row">
+          <article class="highlighting">
+            <header class="highlighting">
+              <h2>
+                <a href="article.html">Titre 1 qui identifie bien l'article</a>
+              </h2>
+              <div>
+                Le <time datetime="2017-12-17">17/12/2017</time> |
+                <span>Par <a href="user.html">NerOcrO</a></span> |
+                <span><a href="term.html"><abbr title="Hypertext Markup Language" lang="en">HTML</abbr>5</a></span> |
+              </div>
+            </header>
+            <p>
+              Chapô 1
+            </p>
+            <footer class="highlighting">
+              <div>
+                <span>1 commentaire</span>
+              </div>
+            </footer>
+          </article>
+          <article class="highlighting">
+            <header class="highlighting">
+              <h2>
+                <a href="article.html">Titre 2 qui identifie bien l'article</a>
+              </h2>
+              <div>
+                Le <time datetime="2017-12-17">17/12/2017</time> |
+                <span>Par <a href="user.html">NerOcrO</a></span> |
+                <span><a href="term.html"><abbr title="Cascading Style Sheets" lang="en">CSS</abbr>3</a></a></span> |
+              </div>
+            </header>
+            <p>
+              Chapô 2
+            </p>
+            <footer class="highlighting">
+              <div>
+                <span>10 commentaires</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+        <div class="row">
+          <article class="highlighting">
+            <header class="highlighting">
+              <h2>
+                <a href="article.html">Titre 1 qui identifie bien l'article</a>
+              </h2>
+              <div>
+                Le <time datetime="2017-12-17">17/12/2017</time> |
+                <span>Par <a href="user.html">NerOcrO</a></span> |
+                <span><a href="term.html"><abbr title="Hypertext Markup Language" lang="en">HTML</abbr>5</a></span> |
+              </div>
+            </header>
+            <p>
+              Chapô 1
+            </p>
+            <footer class="highlighting">
+              <div>
+                <span>1 commentaire</span>
+              </div>
+            </footer>
+          </article>
+          <article class="highlighting">
+            <header class="highlighting">
+              <h2>
+                <a href="article.html">Titre 2 qui identifie bien l'article</a>
+              </h2>
+              <div>
+                Le <time datetime="2017-12-17">17/12/2017</time> |
+                <span>Par <a href="user.html">NerOcrO</a></span> |
+                <span><a href="term.html"><abbr title="Cascading Style Sheets" lang="en">CSS</abbr>3</a></a></span> |
+              </div>
+            </header>
+            <p>
+              Chapô 2
+            </p>
+            <footer class="highlighting">
+              <div>
+                <span>10 commentaires</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+        <div class="row">
+          <article class="highlighting">
+            <header class="highlighting">
+              <h2>
+                <a href="article.html">Titre 1 qui identifie bien l'article</a>
+              </h2>
+              <div>
+                Le <time datetime="2017-12-17">17/12/2017</time> |
+                <span>Par <a href="user.html">NerOcrO</a></span> |
+                <span><a href="term.html"><abbr title="Hypertext Markup Language" lang="en">HTML</abbr>5</a></span> |
+              </div>
+            </header>
+            <p>
+              Chapô 1
+            </p>
+            <footer class="highlighting">
+              <div>
+                <span>1 commentaire</span>
+              </div>
+            </footer>
+          </article>
+          <article class="highlighting">
+            <header class="highlighting">
+              <h2>
+                <a href="article.html">Titre 2 qui identifie bien l'article</a>
+              </h2>
+              <div>
+                Le <time datetime="2017-12-17">17/12/2017</time> |
+                <span>Par <a href="user.html">NerOcrO</a></span> |
+                <span><a href="term.html"><abbr title="Cascading Style Sheets" lang="en">CSS</abbr>3</a></a></span> |
+              </div>
+            </header>
+            <p>
+              Chapô 2
+            </p>
+            <footer class="highlighting">
+              <div>
+                <span>10 commentaires</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <address>
+    <section class="highlighting">
+      <h1>S'inscrire à la newsletter</h1>
+      <form action="/newsletter" method="post" class="highlighting">
+        <label for="newsletter">Inscrivez-vous à la newsletter</label>
+        <input id="newsletter" name="newsletter" placeholder="Entrez votre e-mail" value="" type="email">
+        <input value="Valider" name="submit" type="submit">
+      </form>
+    </section>
+
+    <footer class="highlighting">
+      <address class="highlighting">
         Open Web Solution<br>
         23 rue de Dessous des Berges<br>
         75013, Paris<br>
@@ -67,15 +208,15 @@
         Fax : <a href="tel:+0184160811">01 84 16 08 11</a><br>
         <a href="mailto:contact@ows.fr">Contactez-nous par e-mail</a><br>
       </address>
-      <ul>
+      <ul class="highlighting">
         <li><a href="terms.html">Conditions d'utilisation</a></li>
         <li><a href="privacy.html">Confidentialité</a></li>
         <li><a href="https://www.mozilla.org/fr/privacy/websites/#cookies" rel="noopener external" target="_blank">Cookies</a></li>
         <li><a href="accessibility.html">Accessibilité</a></li>
         <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element" rel="noopener external" hreflang="fr" lang="en" target="_blank">
-          <abbr title="Mozilla Documentation Network">MDN</abbr> <abbr title="Hypertext Markup Language">HTML</abbr>
+          <abbr title="Mozilla Documentation Network" lang="en">MDN</abbr> <abbr title="Hypertext Markup Language" lang="en">HTML</abbr>
         </a></li>
-        <li><a href="#menu" title="Retour en haut de la page">⬆</a></li>
+        <li><a href="#skipHiddenMenu" title="Retour en haut de la page" class="back-to-top">⬆</a></li>
       </ul>
     </footer>
 
